@@ -1,1 +1,1 @@
-# AlphaTeam
+# IGAM
