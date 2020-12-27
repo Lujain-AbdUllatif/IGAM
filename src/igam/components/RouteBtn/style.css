@@ -1,0 +1,34 @@
+.route-btn {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(0, 0%, 77%);
+  color: #17296a;
+  width: 80%;
+  height: 15vh;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.route-btn:hover {
+  background: hsl(0, 1%, 65%);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  margin-right: 20px;
+}
+.route-icon {
+  width: 70%;
+  height: 70%;
+  color: #17296a;
+}
+
+.route-title {
+  margin-left: 20px;
+}
