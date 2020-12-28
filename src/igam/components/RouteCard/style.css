@@ -1,0 +1,16 @@
+.card {
+  width: 42%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #17296a;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 4%;
+}
+
+.card:hover {
+  background: #1d3caa;
+}

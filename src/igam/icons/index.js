@@ -14,12 +14,50 @@ import {
   FaQuestionCircle,
   FaCheckCircle,
   FaUsers,
+  FaSearch,
+  FaPlusCircle,
 } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
-import { MdLocationOn } from "react-icons/md";
+import {
+  MdLocationOn,
+  MdAssignment,
+  MdAssignmentTurnedIn,
+  MdAssignmentLate,
+  MdPhone,
+} from "react-icons/md";
 import { GiFamilyHouse, GiVillage } from "react-icons/gi";
 import { ImMenu } from "react-icons/im";
 import { BsPlusCircleFill } from "react-icons/bs";
+
+export function AssignedIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <MdAssignmentLate />
+    </IconContext.Provider>
+  );
+}
+
+export function DeliveredIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <MdAssignmentTurnedIn />
+    </IconContext.Provider>
+  );
+}
+export function AssignIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <MdAssignment />
+    </IconContext.Provider>
+  );
+}
+export function SearchIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaSearch />
+    </IconContext.Provider>
+  );
+}
 
 export function AgentsIcon(props) {
   return (
@@ -91,6 +129,13 @@ export function LocationIcon(props) {
   );
 }
 
+export function HomeIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaHome />
+    </IconContext.Provider>
+  );
+}
 export function HouseIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
@@ -166,6 +211,14 @@ export function MoneyIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
       <FaCoins />
+    </IconContext.Provider>
+  );
+}
+
+export function PhoneIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <MdPhone />
     </IconContext.Provider>
   );
 }
