@@ -4,14 +4,14 @@ import {
   UserIcon,
   PhoneIcon,
   LocationIcon,
-  AssignIcon,
+  EditIcon,
   HomeIcon,
 } from "../../icons";
 
 export default function Profile(props) {
   return (
     <div class="profile-container">
-      <AssignIcon className="assign-icon" />
+      <EditIcon className="edit-icon" />
       {/* Header */}
       <div className="profile-header">
         <span class="circle">

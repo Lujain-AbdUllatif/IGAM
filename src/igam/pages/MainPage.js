@@ -9,7 +9,7 @@ import LocationsPage from "../pages/LocationsPage";
 import LoginPage from "../pages/LoginPage";
 import FamiliesPage from "./FamiliesPage";
 import AgentsPage from "./AgentsPage";
-import AgentProfile from "../pages/AgentProfie";
+import AgentProfile from "../pages/AgentProfile";
 import FamilyProfile from "../pages/FamilyProfile";
 
 export default function MainPage() {

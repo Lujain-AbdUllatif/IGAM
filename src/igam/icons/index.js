@@ -16,6 +16,7 @@ import {
   FaUsers,
   FaSearch,
   FaPlusCircle,
+  FaEdit,
 } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
 import {
@@ -219,6 +220,14 @@ export function PhoneIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
       <MdPhone />
+    </IconContext.Provider>
+  );
+}
+
+export function EditIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaEdit />
     </IconContext.Provider>
   );
 }
