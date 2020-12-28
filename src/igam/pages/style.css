@@ -191,3 +191,14 @@
 .card-icon-title {
   width: 30%;
 }
+
+.search-packges-local-container {
+  border: 0.1px solid #afafaf;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  height: 5vh;
+  margin: 2vh auto;
+}

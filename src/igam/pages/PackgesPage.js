@@ -2,8 +2,9 @@ import React from "react";
 import { PackgeIcon, AssignIcon, DeliveredIcon, AssignedIcon } from "../icons";
 import PageTitle from "../components/PageTitle";
 import SubTitleInfo from "../components/SubTitleInfo";
-import { SmallRouteBtn, AddBtn } from "../components/customBtn";
 import TrioBtns from "../components/trioBtns";
+import { AddBtn } from "../components/customBtn";
+import SearchLocal from "../components/SearchLocal";
 export default function PackgesPage() {
   return (
     <div className="main-container">
@@ -30,6 +31,7 @@ export default function PackgesPage() {
       <div className="packges-data">
         <div className="packges-head">
           <h3 className="blue-igam">Delivered</h3>
+          <SearchLocal className="search-packges-local-container" />
         </div>
       </div>
     </div>
