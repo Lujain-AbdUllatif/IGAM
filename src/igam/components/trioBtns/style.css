@@ -6,7 +6,7 @@
 }
 
 /* SPANS */
-.trioBtns-container span {
+.trioBtns-container button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,9 +16,10 @@
   width: 70px;
   height: 70px;
   cursor: pointer;
+  border: none;
 }
 
-.trioBtns-container span:hover {
+.trioBtns-container button:hover {
   background-color: hsl(209deg, 38%, 26%);
 }
 

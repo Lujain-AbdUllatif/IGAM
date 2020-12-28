@@ -1,19 +1,27 @@
 import React from "react";
 import "./style.css";
 import { DeliveredIcon, AssignedIcon, AssignIcon } from "../../icons";
+import { useHistory } from "react-router-dom";
 
 export default function TrioBtns(props) {
+  const history = useHistory();
+
+  const handleFormClick = (e) => {
+    e.preventDefault();
+    history.push("/assign-package-form");
+  };
+
   return (
     <div className="trioBtns-container">
-      <span>
+      <button>
         <DeliveredIcon className="trioBtns-deliveredIcon" />
-      </span>
-      <span>
+      </button>
+      <button>
         <AssignedIcon className="trioBtns-assignedIcon" />
-      </span>
-      <span>
+      </button>
+      <button onClick={handleFormClick}>
         <AssignIcon className="trioBtns-assignIcon" />
-      </span>
+      </button>
     </div>
   );
 }
