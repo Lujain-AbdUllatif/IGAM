@@ -16,6 +16,9 @@ import {
   FaUsers,
   FaSearch,
   FaPlusCircle,
+  FaEdit,
+  FaCheckSquare,
+  FaFilter,
 } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
 import {
@@ -27,7 +30,31 @@ import {
 } from "react-icons/md";
 import { GiFamilyHouse, GiVillage } from "react-icons/gi";
 import { ImMenu } from "react-icons/im";
-import { BsPlusCircleFill } from "react-icons/bs";
+import { BsPlusCircleFill, BsFillQuestionCircleFill } from "react-icons/bs";
+
+export function FilterIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaFilter />
+    </IconContext.Provider>
+  );
+}
+
+export function QuestionCircleIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <BsFillQuestionCircleFill />
+    </IconContext.Provider>
+  );
+}
+
+export function CheckSquareIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaCheckSquare />
+    </IconContext.Provider>
+  );
+}
 
 export function AssignedIcon(props) {
   return (
@@ -219,6 +246,14 @@ export function PhoneIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
       <MdPhone />
+    </IconContext.Provider>
+  );
+}
+
+export function EditIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaEdit />
     </IconContext.Provider>
   );
 }
