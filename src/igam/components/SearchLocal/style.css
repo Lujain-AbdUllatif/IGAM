@@ -1,0 +1,18 @@
+.search-local-input {
+  border: none;
+}
+
+.search-local-input:focus {
+  outline: none;
+}
+
+.search-local-container {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 73%;
+  height: 5vh;
+  margin: 2vh auto;
+}
