@@ -23,6 +23,7 @@ import {
   MdAssignment,
   MdAssignmentTurnedIn,
   MdAssignmentLate,
+  MdPhone,
 } from "react-icons/md";
 import { GiFamilyHouse, GiVillage } from "react-icons/gi";
 import { ImMenu } from "react-icons/im";
@@ -135,6 +136,13 @@ export function HomeIcon(props) {
     </IconContext.Provider>
   );
 }
+export function HouseIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaHome />
+    </IconContext.Provider>
+  );
+}
 export function LogoIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
@@ -211,14 +219,6 @@ export function PhoneIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
       <MdPhone />
-    </IconContext.Provider>
-  );
-}
-
-export function AssignIcon(props) {
-  return (
-    <IconContext.Provider value={{ className: props.className }}>
-      <MdAssignment />
     </IconContext.Provider>
   );
 }
