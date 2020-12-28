@@ -13,6 +13,7 @@ import FamiliesPage from "./FamiliesPage";
 import AgentsPage from "./AgentsPage";
 import AgentProfile from "../pages/AgentProfile";
 import FamilyProfile from "../pages/FamilyProfile";
+import FamiliesFormPage from "../pages/FamiliesFormPage";
 import AssignPackageForm from "../pages/AssignPackageForm";
 
 export default function MainPage() {
@@ -32,6 +33,7 @@ export default function MainPage() {
           <Route exact path="/Delivered" component={Delivered} />
           <Route exact path="/agent/profile" component={AgentProfile} />
           <Route exact path="/family/profile" component={FamilyProfile} />
+          <Route exact path="/family/form/page" component={FamiliesFormPage} />
           <Route
             exact
             path="/assign-package-form"
