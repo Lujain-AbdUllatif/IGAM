@@ -14,13 +14,41 @@ import {
   FaQuestionCircle,
   FaCheckCircle,
   FaUsers,
+  FaPlusCircle,
 } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
-import { MdLocationOn } from "react-icons/md";
+import {
+  MdLocationOn,
+  MdAssignment,
+  MdAssignmentTurnedIn,
+  MdAssignmentLate,
+} from "react-icons/md";
 import { GiFamilyHouse, GiVillage } from "react-icons/gi";
 import { ImMenu } from "react-icons/im";
 import { BsPlusCircleFill } from "react-icons/bs";
 
+export function AssignedIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <MdAssignmentLate />
+    </IconContext.Provider>
+  );
+}
+
+export function DeliveredIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <MdAssignmentTurnedIn />
+    </IconContext.Provider>
+  );
+}
+export function AssignIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <MdAssignment />
+    </IconContext.Provider>
+  );
+}
 export function AgentsIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>

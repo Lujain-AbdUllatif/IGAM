@@ -2,7 +2,7 @@ input:focus {
   outline: none;
 }
 
-input {
+.login-input {
   border: none;
   margin-left: 5px;
 }
