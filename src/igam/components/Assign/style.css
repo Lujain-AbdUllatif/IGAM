@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+.center {
+  color: rgb(7, 7, 100);
+  font-size: 30px;
+  margin: 4%;
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+  width: 10%;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  background-color: #f1f1f1;
+  width: 50%;
+}
+
+input[type="submit"] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+button {
+  padding: 7px 7px;
+  margin-left: 5px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+th,
+td {
+  padding: 15px;
+}
+td {
+  text-align: center;
+}
+
+table {
+  background-color: rgb(231, 224, 224);
+}

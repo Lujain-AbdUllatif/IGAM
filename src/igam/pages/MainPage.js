@@ -5,6 +5,8 @@ import StockPage from "../pages/StockPage";
 import PackgesPage from "../pages/PackgesPage";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginPage from "../pages/LoginPage";
+import Delivered from "../components/Delivered";
+import Assign from "../components/Assign";
 export default function MainPage() {
   return (
     <div className="page">
@@ -15,6 +17,8 @@ export default function MainPage() {
           <Route exact path="/login" component={LoginPage} />
           <Route exact path="/stock" component={StockPage} />
           <Route exact path="/packges" component={PackgesPage} />
+          <Route exact path="/assign" component={Assign} />
+          <Route exact path="/Delivered" component={Delivered} />
         </Switch>
       </Router>
     </div>
