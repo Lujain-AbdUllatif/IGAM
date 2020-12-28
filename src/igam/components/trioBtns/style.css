@@ -1,0 +1,43 @@
+/* CONTAINER */
+.trioBtns-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+/* SPANS */
+.trioBtns-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  border-radius: 50%;
+  background-color: hsl(206deg, 11%, 85%);
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  border: none;
+}
+
+.trioBtns-container button:hover {
+  background-color: hsl(209deg, 38%, 26%);
+}
+
+/* ICONS */
+.trioBtns-deliveredIcon,
+.trioBtns-assignedIcon,
+.trioBtns-assignIcon {
+  font-size: 38px;
+}
+
+.trioBtns-deliveredIcon {
+  color: #257d18;
+}
+
+.trioBtns-assignedIcon {
+  color: rgb(253, 188, 68);
+}
+
+.trioBtns-assignIcon {
+  color: #0c8585;
+}

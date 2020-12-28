@@ -15,6 +15,8 @@ import {
   FaCheckCircle,
   FaUsers,
   FaSearch,
+  FaPlusCircle,
+  FaEdit,
   FaCheckSquare,
   FaFilter,
 } from "react-icons/fa";
@@ -244,6 +246,14 @@ export function PhoneIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
       <MdPhone />
+    </IconContext.Provider>
+  );
+}
+
+export function EditIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaEdit />
     </IconContext.Provider>
   );
 }
