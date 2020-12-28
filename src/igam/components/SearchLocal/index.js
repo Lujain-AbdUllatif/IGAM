@@ -3,7 +3,9 @@ import "./style.css";
 import { SearchIcon, UserIcon } from "../../icons";
 function SearchLocal(props) {
   return (
-    <form className="search-local-container">
+    <form
+      className={props.className ? props.className : "search-local-container"}
+    >
       <input
         type="text"
         className="search-local-input"
