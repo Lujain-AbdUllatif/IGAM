@@ -5,11 +5,13 @@ export default function LogInInput(props) {
     <div className="angle-border">
       {props.children}
       <input
+        className="login-input"
         name={props.title}
         type={props.type}
         placeholder={props.title}
         value={props.value}
         onChange={props.onChange}
+        className="login-input"
       />
     </div>
   );

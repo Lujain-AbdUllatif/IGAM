@@ -1,0 +1,15 @@
+.small-route-btn {
+  width: 20%;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+
+.small-route-btn:focus {
+  outline: none;
+}
+.add-btn-icon {
+  width: 90%;
+  height: 90%;
+  color: #27701b;
+}
