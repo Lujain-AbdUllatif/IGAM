@@ -1,13 +1,18 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+//PAGES
 import HeadSection from "../components/HeadSection";
 import HomePage from "../pages/HomePage";
 import StockPage from "../pages/StockPage";
 import PackgesPage from "../pages/PackgesPage";
 import LocationsPage from "../pages/LocationsPage";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginPage from "../pages/LoginPage";
 import FamiliesPage from "./FamiliesPage";
 import AgentsPage from "./AgentsPage";
+import AgentProfile from "../pages/AgentProfie";
+import FamilyProfile from "../pages/FamilyProfile";
+import FamiliesFormPage from "../pages/FamiliesFormPage";
+
 export default function MainPage() {
   return (
     <div className="page">
@@ -21,6 +26,9 @@ export default function MainPage() {
           <Route exact path="/families" component={FamiliesPage} />
           <Route exact path="/agents" component={AgentsPage} />
           <Route exact path="/packges" component={PackgesPage} />
+          <Route exact path="/agent/profile" component={AgentProfile} />
+          <Route exact path="/family/profile" component={FamilyProfile} />
+          <Route exact path="/family/form/page" component={FamiliesFormPage} />
         </Switch>
       </Router>
     </div>

@@ -1,0 +1,14 @@
+.page-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45%;
+  height: 10vh;
+  align-self: flex-start;
+  margin-left: 5%;
+  color: #17296a;
+}
+
+.page-title h1 {
+  margin-left: 5px;
+}

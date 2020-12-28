@@ -1,0 +1,18 @@
+/* .form-input-location {
+  border: none;
+}
+.form-input-location:focus {
+  outline: none;
+} */
+.families-form-container {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  scroll-behavior: none;
+  flex-direction: column;
+}
+/* .families-form {
+  justify-content: space-around;
+  margin-top: 5px;
+} */
