@@ -14,6 +14,7 @@ import {
   FaQuestionCircle,
   FaCheckCircle,
   FaUsers,
+  FaSearch,
   FaPlusCircle,
 } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
@@ -49,6 +50,14 @@ export function AssignIcon(props) {
     </IconContext.Provider>
   );
 }
+export function SearchIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaSearch />
+    </IconContext.Provider>
+  );
+}
+
 export function AgentsIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
@@ -119,7 +128,7 @@ export function LocationIcon(props) {
   );
 }
 
-export function HouseIcon(props) {
+export function HomeIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
       <FaHome />
@@ -194,6 +203,22 @@ export function MoneyIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
       <FaCoins />
+    </IconContext.Provider>
+  );
+}
+
+export function PhoneIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <MdPhone />
+    </IconContext.Provider>
+  );
+}
+
+export function AssignIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <MdAssignment />
     </IconContext.Provider>
   );
 }

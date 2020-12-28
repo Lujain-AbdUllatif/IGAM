@@ -1,4 +1,4 @@
-input:focus {
+.login-input:focus {
   outline: none;
 }
 

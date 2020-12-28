@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .page {
@@ -152,4 +153,40 @@
 
 .packge-route-btn:focus {
   outline: none;
+.cards-container {
+  width: 80%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.card-icon {
+  width: 80%;
+  height: 60%;
+}
+.orange {
+  color: #ff7d03;
+}
+
+.white {
+  color: white;
+}
+.qarmede {
+  color: #cb6215;
+}
+.yellow {
+  color: #efe37a;
+}
+.blue {
+  color: #17296a;
+}
+.title {
+  width: 50%;
+  height: 60%;
+  text-align: center;
+  color: #17296a;
+}
+.card-icon-title {
+  width: 30%;
 }

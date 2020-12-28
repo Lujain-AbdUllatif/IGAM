@@ -1,0 +1,67 @@
+/* Assign Icon */
+.assign-icon {
+  align-self: flex-end;
+  font-size: 35px;
+  margin-right: 25px;
+  margin-top: 20px;
+}
+
+/* Profile Container */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #17296a;
+}
+
+/* Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #17296a;
+}
+
+.agent-icon {
+  height: 100%;
+  width: 50%;
+  color: #efe37a;
+}
+
+.home-icon {
+  height: 100%;
+  width: 60%;
+  color: #cb6215;
+}
+
+#name {
+  border-bottom: solid #17296a;
+}
+
+/* Details */
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#phone {
+  margin: 5px;
+}
+
+#location {
+  margin: 5px;
+}
+
+.location-icon {
+  color: #ff7d03;
+}
