@@ -17,7 +17,7 @@ import {
   FaSearch,
 } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
-import { MdLocationOn } from "react-icons/md";
+import { MdLocationOn, MdPhone, MdAssignment } from "react-icons/md";
 import { GiFamilyHouse, GiVillage } from "react-icons/gi";
 import { ImMenu } from "react-icons/im";
 import { BsPlusCircleFill } from "react-icons/bs";
@@ -99,7 +99,7 @@ export function LocationIcon(props) {
   );
 }
 
-export function HouseIcon(props) {
+export function HomeIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
       <FaHome />
@@ -174,6 +174,22 @@ export function MoneyIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
       <FaCoins />
+    </IconContext.Provider>
+  );
+}
+
+export function PhoneIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <MdPhone />
+    </IconContext.Provider>
+  );
+}
+
+export function AssignIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <MdAssignment />
     </IconContext.Provider>
   );
 }
