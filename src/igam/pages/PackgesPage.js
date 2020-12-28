@@ -2,6 +2,7 @@ import React from "react";
 import { PackgeIcon, AssignIcon, DeliveredIcon, AssignedIcon } from "../icons";
 import PageTitle from "../components/PageTitle";
 import SubTitleInfo from "../components/SubTitleInfo";
+import TrioBtns from "../components/trioBtns";
 import { AddBtn } from "../components/customBtn";
 import SearchLocal from "../components/SearchLocal";
 import Table from "../components/Table";
@@ -26,6 +27,9 @@ export default function PackgesPage() {
           </form>
         </div>
       </div>
+
+      <TrioBtns />
+
       <div className="packges-data">
         <div className="packges-head">
           <h3 className="blue-igam">Delivered</h3>
