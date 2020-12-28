@@ -14,6 +14,7 @@ import {
   FaQuestionCircle,
   FaCheckCircle,
   FaUsers,
+  FaSearch,
 } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
 import { MdLocationOn } from "react-icons/md";
@@ -21,6 +22,13 @@ import { GiFamilyHouse, GiVillage } from "react-icons/gi";
 import { ImMenu } from "react-icons/im";
 import { BsPlusCircleFill } from "react-icons/bs";
 
+export function SearchIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaSearch />
+    </IconContext.Provider>
+  );
+}
 export function AgentsIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>

@@ -3,8 +3,11 @@ import HeadSection from "../components/HeadSection";
 import HomePage from "../pages/HomePage";
 import StockPage from "../pages/StockPage";
 import PackgesPage from "../pages/PackgesPage";
+import LocationsPage from "../pages/LocationsPage";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginPage from "../pages/LoginPage";
+import FamiliesPage from "./FamiliesPage";
+import AgentsPage from "./AgentsPage";
 export default function MainPage() {
   return (
     <div className="page">
@@ -14,6 +17,9 @@ export default function MainPage() {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/login" component={LoginPage} />
           <Route exact path="/stock" component={StockPage} />
+          <Route exact path="/locations" component={LocationsPage} />
+          <Route exact path="/families" component={FamiliesPage} />
+          <Route exact path="/agents" component={AgentsPage} />
           <Route exact path="/packges" component={PackgesPage} />
         </Switch>
       </Router>
