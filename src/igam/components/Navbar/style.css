@@ -7,7 +7,7 @@
   background: white;
   color: #17296a;
   z-index: 1;
-  transform: all 1s;
+  transition: all 0.5s;
 }
 
 .admin-nav-display {

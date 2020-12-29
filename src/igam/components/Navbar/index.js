@@ -39,8 +39,8 @@ export default function NavBar(props) {
         </li>
         <hr />
         <li className="nav-list-one-item">
-          <Link to="/locations" className="link" onClick={handleCloseNav}>
-            <h2>Locations</h2>
+          <Link to="/villages" className="link" onClick={handleCloseNav}>
+            <h2>Villages</h2>
           </Link>
         </li>
         <hr />
