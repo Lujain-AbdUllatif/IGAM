@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { useHistory } from "react-router-dom";
-import { AddIcon, FilterIcon } from "../../icons";
+import { AddIcon } from "../../icons";
 
 export function SmallRouteBtn(props) {
   const history = useHistory();
@@ -17,16 +17,12 @@ export function SmallRouteBtn(props) {
 
 export function AddBtn(props) {
   return (
-    <button type={props.type} className={props.className}>
+    <button
+      type={props.type}
+      className={props.className}
+      onClick={props.onClick}
+    >
       <AddIcon className="add-btn-icon" />
-    </button>
-  );
-}
-
-export function FilterBtn(props) {
-  return (
-    <button type={props.type} className={props.className}>
-      <FilterIcon className="filter-btn-icon" />
     </button>
   );
 }

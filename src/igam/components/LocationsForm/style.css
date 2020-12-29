@@ -1,0 +1,49 @@
+.locaions-form-container {
+  background-color: hsl(206deg, 11%, 85%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  color: #17296a;
+}
+.locaions-form-container h1 {
+  margin-bottom: 20px;
+}
+
+.locations-form {
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.locations-form input {
+  width: 90%;
+}
+
+.locations-input-location {
+  border: none;
+}
+
+.locations-input-location:focus {
+  outline: none;
+}
+
+.locations-icon {
+  background-color: white;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+}
+.locations-form-btn {
+  width: 50%;
+  height: 70%;
+  margin: auto;
+  border-radius: 3px;
+  background-color: #cb6215;
+  color: #17296a;
+}

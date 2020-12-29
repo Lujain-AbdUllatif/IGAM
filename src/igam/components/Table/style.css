@@ -1,0 +1,15 @@
+.packges-details {
+  width: 100%;
+}
+
+.packges-details-head {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #adadad;
+  height: 7vh;
+  border-radius: 5px;
+  color: #17296a;
+  margin-bottom: 0.5vh;
+}

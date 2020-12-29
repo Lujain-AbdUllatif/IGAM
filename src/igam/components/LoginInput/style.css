@@ -2,9 +2,14 @@
   outline: none;
 }
 
+.login-input::placeholder{
+  color: #3e5197
+}
+
 .login-input {
   border: none;
   margin-left: 5px;
+  background: transparent;
 }
 
 .angle-border {
@@ -12,6 +17,6 @@
   width: 200px;
   margin-bottom: 20px;
   padding-left: 5px;
-  border-left: 2px solid black;
-  border-bottom: 2px solid black;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
 }

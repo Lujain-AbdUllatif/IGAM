@@ -13,7 +13,10 @@ import FamiliesPage from "./FamiliesPage";
 import AgentsPage from "./AgentsPage";
 import AgentProfile from "../pages/AgentProfile";
 import FamilyProfile from "../pages/FamilyProfile";
+import FamiliesFormPage from "../pages/FamiliesFormPage";
+import LocationsFormPage from "../pages/LocationsFormPage";
 import AssignPackageForm from "../pages/AssignPackageForm";
+import TestPage from "../pages/TestPage";
 
 export default function MainPage() {
   return (
@@ -24,7 +27,7 @@ export default function MainPage() {
           <Route exact path="/" component={HomePage} />
           <Route exact path="/login" component={LoginPage} />
           <Route exact path="/stock" component={StockPage} />
-          <Route exact path="/locations" component={LocationsPage} />
+          <Route exact path="/villages" component={LocationsPage} />
           <Route exact path="/families" component={FamiliesPage} />
           <Route exact path="/agents" component={AgentsPage} />
           <Route exact path="/packges" component={PackgesPage} />
@@ -32,11 +35,18 @@ export default function MainPage() {
           <Route exact path="/Delivered" component={Delivered} />
           <Route exact path="/agent/profile" component={AgentProfile} />
           <Route exact path="/family/profile" component={FamilyProfile} />
+          <Route exact path="/family/form/page" component={FamiliesFormPage} />
+          <Route
+            exact
+            path="/location/form/page"
+            component={LocationsFormPage}
+          />
           <Route
             exact
             path="/assign-package-form"
             component={AssignPackageForm}
           />
+          <Route exact path="/test" component={TestPage} />
         </Switch>
       </Router>
     </div>
