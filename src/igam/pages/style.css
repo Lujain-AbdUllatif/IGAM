@@ -9,7 +9,7 @@
   position: relative;
   width: 414px;
   border: 1px solid black;
-  height: 200vh;
+  height: 100vh;
   margin: auto;
   overflow-x: hidden;
 }
@@ -28,7 +28,7 @@
   .page {
     width: 100%;
     border: 1px solid black;
-    height: 200vh;
+    height: 100vh;
     margin: 0;
     overflow-x: hidden;
   }
@@ -201,4 +201,24 @@
   width: 60%;
   height: 5vh;
   margin: 2vh auto;
+}
+
+x .packge-detail-title {
+  width: 20%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.packge-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #c4c4c4;
+  height: 7vh;
+  border-radius: 5px;
+  color: #17296a;
+  margin-bottom: 0.5vh;
 }
