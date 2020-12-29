@@ -4,43 +4,67 @@ import { LocationsIcon } from "../../icons";
 export default function FamiliesForm(props) {
   return (
     <div className="families-form-container">
-      <h1>FamiliesForm</h1>
       <form className="families-form">
-        <label htmlFor="Name"> Name:</label>
-        <br></br>
-        <input type="text" name="Name" placeholder="Name ....." />
-        <br></br>
-        <label for="phone number">phone number: </label>
-        <br></br>
-        <input
-          type="tel"
-          name="phone number"
-          placeholder="phone number ....."
-          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-        />
-        <br></br>
-        <label for="email"> email: </label>
-        <br></br>
-        <input type="email" name="email" placeholder="email ....." />
-        <br></br>
-        <label For="location"> location:</label>
+        <h2>Family-Form</h2>
+        <label htmlFor="Name"> Name</label>
+        <div className="families-location-icon">
+          <input
+            type="text"
+            name="Name"
+            placeholder="Name ....."
+            className="families-input-location"
+          />
+        </div>
         <br></br>
 
-        <input
-          type="text"
-          name="location"
-          className="form-input-location"
-          placeholder="location ....."
-        />
-        <LocationsIcon />
+        <label for="phone no">phone no </label>
+        <div className="families-location-icon">
+          <input
+            type="tel"
+            name="phone no"
+            placeholder="phone no ....."
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            className="families-input-location"
+          />
+        </div>
+        <br></br>
 
+        <label for="email"> email </label>
+        <div className="families-location-icon">
+          <input
+            type="email"
+            name="email"
+            placeholder="email ....."
+            className="families-input-location"
+          />
+        </div>
         <br></br>
-        <label for="Number">Number: </label>
+
+        <label For="location"> location</label>
+        <div className="families-location-icon">
+          <input
+            type="text"
+            name="location"
+            className="families-input-location"
+            placeholder="location ....."
+          />
+          <LocationsIcon />
+        </div>
         <br></br>
-        <input type="number" name="Number" placeholder="Number ....." />
+
+        <label for="Member">Member </label>
+        <div className="families-location-icon">
+          <input
+            type="Number"
+            name="Member"
+            placeholder="member ....."
+            className="families-input-location"
+          />
+        </div>
         <br></br>
+
         <button className="families-form-btn" type="submit">
-          Submit
+          Add
         </button>
       </form>
     </div>
