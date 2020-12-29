@@ -4,8 +4,8 @@ import { LocationsIcon } from "../../icons";
 export default function LocationsForm(props) {
   return (
     <div className="locaions-form-container">
-      <h1>LocaionForm</h1>
       <form className="locations-form">
+        <h2>LocaionForm</h2>
         <label htmlFor="Name"> location name</label>
         <div className="locations-icon">
           <input
@@ -30,7 +30,7 @@ export default function LocationsForm(props) {
         <br></br>
 
         <button className="locations-form-btn" type="submit">
-          Add Location
+          Add
         </button>
       </form>
     </div>
