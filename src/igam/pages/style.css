@@ -22,6 +22,7 @@
   justify-content: start;
   align-items: center;
   margin-top: 3vh;
+  position: relative;
 }
 
 @media all and (max-width: 414px) {
@@ -127,6 +128,7 @@
 
 .packges-data {
   width: 90%;
+  margin: auto;
 }
 
 .packges-head {
@@ -203,22 +205,69 @@
   margin: 2vh auto;
 }
 
-x .packge-detail-title {
-  width: 20%;
-  height: 70%;
+.logo-big-container {
+  width: 60%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
+  color: white;
 }
-.packge-card {
-  width: 100%;
+
+.login-form {
+  margin-top: 10vh;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: #c4c4c4;
-  height: 7vh;
-  border-radius: 5px;
+  flex-direction: column;
+  align-items: flex-end;
   color: #17296a;
-  margin-bottom: 0.5vh;
+}
+
+.login-btn {
+  width: 7vh;
+  height: 7vh;
+  background: transparent;
+  border: none;
+}
+
+.login-btn:focus {
+  outline-style: none;
+}
+
+.login-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #53b7e1;
+}
+
+.login-icon {
+  width: 100%;
+  height: 100%;
+}
+
+sign-up-link {
+  justify-self: flex-end;
+}
+
+.cards-page-head {
+  width: 90%;
+  margin: auto;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-page-add-btn {
+  background: transparent;
+  width: 6vh;
+  height: 6vh;
+  border: none;
+}
+
+.cards-page-add-btn:focus {
+  outline: none !important;
 }
