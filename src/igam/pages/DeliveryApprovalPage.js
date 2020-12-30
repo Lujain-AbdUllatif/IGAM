@@ -17,10 +17,15 @@ export default function DeliveryApproval() {
       </div>
 
       <div className="delivery-approval-Code">
-        <p>Agent Code</p>
-        <input type="code" name="Nnmber" />
-        <p>Family Code</p>
-        <input type="code" name="Mumber" />
+        <div className="agent-code">
+          <label>Agent Code</label>
+          <input type="code" name="Nnmber" />
+        </div>
+
+        <div className="family-code">
+          <label>Family Code</label>
+          <input type="code" name="Mumber" />
+        </div>
       </div>
 
       <button className="delivery-approval-btn" type="submit">

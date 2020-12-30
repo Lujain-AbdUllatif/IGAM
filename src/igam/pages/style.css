@@ -337,7 +337,7 @@ sign-up-link {
   margin-bottom: 3vh;
   text-align: justify;
 }
-
+/*/delivery-approval-page/*/
 .delivery-approval-details {
   background-color: hsl(206deg, 11%, 85%);
   width: 300px;
@@ -345,29 +345,24 @@ sign-up-link {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* margin-top: 3vh; */
   margin-bottom: 3vh;
   border-radius: 25px;
   padding: 40px;
-  align-items: center;
   color: #17296a;
+  text-align: left;
 }
-
+/*/delivery-approval-page/*/
 .delivery-approval-Code {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   margin-bottom: 3vh;
   margin-top: 3vh;
   margin-left: 20%;
   margin-right: 20%;
 }
-.delivery-approval-Code p {
-  margin-left: 15px;
-  text-align: left;
-}
+/*/delivery-approval-page/*/
 .delivery-approval-Code input {
-  width: 40%;
+  width: 50%;
   margin-left: 2px;
   margin-right: 2px;
   border-left: 2px solid rgb(8, 8, 8);
@@ -375,6 +370,7 @@ sign-up-link {
   border-right: 2px solid rgb(8, 8, 8);
   border-top: 2px solid rgb(8, 8, 8);
 }
+/*/delivery-approval-page/*/
 .delivery-approval-btn {
   width: 30%;
   height: 70%;
@@ -385,4 +381,15 @@ sign-up-link {
   font-size: 16px;
   color: black;
   height: 4vh;
+}
+/*/delivery-approval-page/*/
+.agent-code {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+/*/delivery-approval-page/*/
+.family-code {
+  display: flex;
+  justify-content: space-between;
 }
