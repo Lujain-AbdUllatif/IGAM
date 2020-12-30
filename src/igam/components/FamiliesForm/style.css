@@ -8,8 +8,13 @@
   color: #17296a;
 }
 
-.families-form-container h2 {
+.families-form-container label {
+  font-size: 12px;
+}
+
+.families-form-container h4 {
   margin-bottom: 3vh;
+  margin-top: 3vh;
 }
 
 .families-form {
@@ -21,6 +26,7 @@
 
 .families-form input {
   width: 90%;
+  height: 100%;
 }
 
 .families-input-location {
@@ -31,10 +37,13 @@
 }
 .families-location-icon {
   background-color: white;
-  border-left: 2px solid rgb(223, 220, 220);
+  /* border-left: 2px solid rgb(223, 220, 220);
   border-bottom: 2px solid rgb(223, 220, 220);
   border-right: 2px solid rgb(223, 220, 220);
-  border-top: 2px solid rgb(223, 220, 220);
+  border-top: 2px solid rgb(223, 220, 220); */
+  height: 5vh;
+  padding: 2px;
+  border-radius: 5px;
 }
 .families-input-location {
   width: 100%;
@@ -44,8 +53,9 @@
   height: 70%;
   margin: auto;
   border-radius: 3px;
-  background-color: #ff7d03;
+  background-color: #c92d5f;
   border: none;
   font-size: 16px;
-  color: #17296a;
+  color: #ebecf1;
+  height: 4vh;
 }

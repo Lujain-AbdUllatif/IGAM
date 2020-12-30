@@ -4,15 +4,14 @@ import { LocationsIcon } from "../../icons";
 export default function LocationsForm(props) {
   return (
     <div className="locaions-form-container">
-      <h1>LocaionForm</h1>
       <form className="locations-form">
+        <h4>Locaion-Form</h4>
         <label htmlFor="Name"> location name</label>
         <div className="locations-icon">
           <input
             type="text"
             name="location name"
             className="locations-input-location"
-            placeholder="location name ....."
           />
         </div>
         <br></br>
@@ -23,14 +22,13 @@ export default function LocationsForm(props) {
             type="text"
             name="location"
             className="locations-input-location"
-            placeholder="location ....."
           />
           <LocationsIcon />
         </div>
         <br></br>
 
         <button className="locations-form-btn" type="submit">
-          Add Location
+          Add
         </button>
       </form>
     </div>
