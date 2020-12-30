@@ -18,3 +18,20 @@
   color: #17296a;
   margin-bottom: 0.5vh;
 }
+
+.packge-card-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #d6d6d6;
+  height: 7vh;
+  border-radius: 5px;
+  color: #17296a;
+  margin-bottom: 0.5vh;
+}
+
+.details-in-table {
+  display: flex;
+  flex-direction: column;
+}
