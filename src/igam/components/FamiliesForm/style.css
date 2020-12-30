@@ -6,6 +6,9 @@
   border-radius: 5px;
   align-items: center;
   color: #17296a;
+  margin: auto;
+  margin-top: 25vh;
+  position: relative;
 }
 
 .families-form-container label {

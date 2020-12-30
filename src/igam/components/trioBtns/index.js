@@ -18,7 +18,7 @@ export default function TrioBtns(props) {
       <button>
         <AssignedIcon className="trioBtns-assignedIcon" />
       </button>
-      <button onClick={handleFormClick}>
+      <button onClick={props.onClick_3}>
         <AssignIcon className="trioBtns-assignIcon" />
       </button>
     </div>

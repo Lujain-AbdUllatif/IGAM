@@ -1,16 +1,11 @@
 import React from "react";
 import { CloseIcon } from "../../icons";
 import "./style.css";
-import { handleFormDisplay } from "../../utils";
 export default function AgentForm(props) {
-  const handleCloseClick = handleFormDisplay(
-    props.formRef,
-    "black-form-container-show"
-  );
   return (
     <div ref={props.formRef} className="black-form-container">
       <div className="agent-form-container">
-        <button className="close-form-btn" onClick={handleCloseClick}>
+        <button className="close-form-btn" onClick={props.onClose}>
           <CloseIcon className="agent-form-colse-icon" />
         </button>
         <form className="agent-form">
