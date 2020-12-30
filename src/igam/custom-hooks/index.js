@@ -1,4 +1,4 @@
-import React from "react";
+import { useRef } from "react";
 import { useHistory } from "react-router-dom";
 export function useCustomHistory(path) {
   const history = useHistory();
@@ -7,4 +7,12 @@ export function useCustomHistory(path) {
   };
 
   return handlePathChange;
+}
+
+export function useFormRef() {
+  const formRef = useRef();
+  const handleFormDisplay = (event) => {
+    formRef.current.classList.toggle("black-form-container-show");
+  };
+  return [formRef, handleFormDisplay];
 }

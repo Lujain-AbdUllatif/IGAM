@@ -1,0 +1,42 @@
+.add-form-control {
+  display: flex;
+  height: 7vh;
+  margin-top: 2vh;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.add-form {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #afafaf;
+  border-radius: 3.5vh;
+  background: #c9c7c7;
+}
+
+.add-form-input {
+  height: 70%;
+  width: 80%;
+  border: none;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  padding: 5px;
+  border-radius: 3vh;
+}
+.add-form-btn {
+  width: 30%;
+  height: 85%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.add-form-btn:focus,
+.add-form-input:focus {
+  outline: none;
+}

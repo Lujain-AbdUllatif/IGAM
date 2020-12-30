@@ -15,7 +15,7 @@ export default function TrioBtns(props) {
       <CircleBtn>
         <AssignedIcon className="trioBtns-assignedIcon" />
       </CircleBtn>
-      <CircleBtn onClick={handleFormClick}>
+      <CircleBtn onClick={props.onClick_3}>
         <AssignIcon className="trioBtns-assignIcon" />
       </CircleBtn>
     </div>

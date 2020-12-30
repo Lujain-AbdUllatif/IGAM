@@ -19,6 +19,8 @@ import {
   FaEdit,
   FaCheckSquare,
   FaFilter,
+  FaFileSignature,
+  FaEye,
 } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
 import {
@@ -31,6 +33,14 @@ import {
 import { GiFamilyHouse, GiVillage } from "react-icons/gi";
 import { ImMenu } from "react-icons/im";
 import { BsPlusCircleFill, BsFillQuestionCircleFill } from "react-icons/bs";
+
+export function SignatureIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaFileSignature />
+    </IconContext.Provider>
+  );
+}
 
 export function FilterIcon(props) {
   return (
@@ -254,6 +264,14 @@ export function EditIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
       <FaEdit />
+    </IconContext.Provider>
+  );
+}
+
+export function EyeIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaEye />
     </IconContext.Provider>
   );
 }

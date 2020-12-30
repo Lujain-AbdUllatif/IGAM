@@ -1,0 +1,93 @@
+/* ASSIGN-PACKAGE-FORM */
+.assign-package-form {
+  width: 90%;
+  position: relative;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 5px;
+  border: grey solid 1px;
+  background-color: hsl(206deg, 11%, 85%);
+  color: #17296a;
+  margin-top: 30vh;
+}
+
+.assign-package-form label {
+  font-size: 12px;
+}
+
+.assign-package-form input,
+.assign-package-form select {
+  width: 90%;
+  height: 5vh;
+  border: none;
+  background: white;
+  border-radius: 5px;
+}
+
+.assign-package-form input,
+.village-select {
+  margin-bottom: 3vh;
+}
+
+.assign-package-form-btn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c92d5f;
+  height: 4vh;
+  /* color: aliceblue; */
+  padding: 2px 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.assign-package-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.selectBox {
+  width: 90%;
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 90%;
+  height: 150px;
+  padding: 10px;
+  overflow-y: scroll;
+  border: 1px grey solid;
+  background-color: white;
+}
+
+#checkboxes label {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  margin-bottom: 8px;
+  height: 10%;
+}
+
+#checkboxes label input {
+  width: 10%;
+  height: 100%;
+  margin: 7px;
+}
