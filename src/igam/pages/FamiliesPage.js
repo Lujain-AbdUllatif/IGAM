@@ -4,7 +4,6 @@ import { HouseIcon, FamilyIcon } from "../icons";
 import { AddBtn } from "../components/customBtn";
 import RouteCard from "../components/RouteCard";
 import { useCustomHistory } from "../custom-hooks";
-import { useHistory } from "react-router-dom";
 
 const Families = [
   "Family_1",
@@ -17,13 +16,9 @@ const Families = [
 ];
 
 export default function FamiliesPage(props) {
-  const history = useHistory();
-
-  const handleClick = () => {
-    history.push("/family-profile");
-  };
-
+  const handleRouteCardClick = useCustomHistory("/family-profile");
   const handleAddClick = useCustomHistory("/family-form");
+
   return (
     <div className="main-container">
       <div className="cards-page-head">
@@ -40,7 +35,11 @@ export default function FamiliesPage(props) {
       <div className="cards-container">
         {Families.map((family) => {
           return (
-            <RouteCard title={family} className="white" onClick={handleClick}>
+            <RouteCard
+              title={family}
+              className="white"
+              onClick={handleRouteCardClick}
+            >
               <HouseIcon className="card-icon qarmede" />
             </RouteCard>
           );
