@@ -8,7 +8,7 @@ export default function TrioBtns(props) {
 
   const handleFormClick = (e) => {
     e.preventDefault();
-    history.push("/assign-package-form");
+    history.push("/package-form");
   };
 
   return (

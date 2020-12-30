@@ -7,8 +7,13 @@
   align-items: center;
   color: #17296a;
 }
-.locaions-form-container h2 {
+.locaions-form-container h4 {
   margin-bottom: 3vh;
+  margin-top: 3vh;
+}
+
+.locaions-form-container label {
+  font-size: 12px;
 }
 
 .locations-form {
@@ -32,10 +37,11 @@
 
 .locations-icon {
   background-color: white;
-  border-left: 2px solid rgb(223, 220, 220);
-  border-bottom: 2px solid rgb(223, 220, 220);
-  border-right: 2px solid rgb(223, 220, 220);
-  border-top: 2px solid rgb(223, 220, 220);
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  border-radius: 5px;
+  padding: 2px;
 }
 .locations-input-location {
   width: 100%;
@@ -45,8 +51,9 @@
   height: 70%;
   margin: auto;
   border-radius: 3px;
-  background-color: #762986;
+  background-color: #c92d5f;
   border: none;
   font-size: 16px;
   color: #ebecf1;
+  height: 4vh;
 }

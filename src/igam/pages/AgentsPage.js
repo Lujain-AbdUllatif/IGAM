@@ -1,9 +1,10 @@
-import React, { useRef } from "react";
+import React from "react";
+import { useHistory } from "react-router-dom";
 import SearchLocal from "../components/SearchLocal";
 import { UserIcon, AgentsIcon } from "../icons";
 import { AddBtn } from "../components/customBtn";
 import RouteCard from "../components/RouteCard";
-import AgentForm from "../components/AgentForm";
+import { useCustomHistory } from "../custom-hooks";
 const Agents = [
   "Agent_1",
   "Agent_2",
@@ -16,12 +17,8 @@ const Agents = [
 ];
 
 export default function AgentsPage(props) {
-  const formRef = useRef();
-  const handleAddClick = (event) => {
-    formRef.current.classList.toggle("agent-form-show");
-    console.log("add agent clicked");
-    console.log(formRef.current);
-  };
+  const handleAddClick = useCustomHistory("/agent-form");
+
   return (
     <div className="main-container">
       <div className="cards-page-head">
@@ -33,7 +30,6 @@ export default function AgentsPage(props) {
         </div>
         <AddBtn className="cards-page-add-btn" onClick={handleAddClick} />
       </div>
-      <AgentForm formRef={formRef} />
       <SearchLocal />
       <div className="cards-container">
         {Agents.map((agent) => {

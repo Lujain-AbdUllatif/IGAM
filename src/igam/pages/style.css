@@ -218,13 +218,16 @@
 }
 
 .assign-package-form label {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .assign-package-form input,
 .assign-package-form select {
   width: 90%;
   height: 5vh;
+  border: none;
+  background: white;
+  border-radius: 5px;
 }
 
 .assign-package-form input,
@@ -237,7 +240,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #c92d5f;
-  color: aliceblue;
+  height: 4vh;
+  /* color: aliceblue; */
   padding: 2px 15px;
   border: none;
   border-radius: 5px;
@@ -286,6 +290,7 @@
   width: 10%;
   height: 100%;
   margin: 7px;
+}
 .logo-big-container {
   width: 60%;
   display: flex;

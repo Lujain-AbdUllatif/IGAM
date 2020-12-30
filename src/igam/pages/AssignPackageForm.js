@@ -10,7 +10,7 @@ export default function AssignPackageForm(props) {
   return (
     <div>
       <form className="assign-package-form">
-        <h5>Assiging Package</h5>
+        <h4>Assiging Package</h4>
         <br />
         <label>Package</label>
 

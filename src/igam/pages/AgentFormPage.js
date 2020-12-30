@@ -1,5 +1,5 @@
 import React from "react";
 import AgentForm from "../components/AgentForm";
-export default function TestPage() {
+export default function AgentFormPage() {
   return <AgentForm />;
 }
