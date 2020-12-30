@@ -17,6 +17,7 @@ const Agents = [
 ];
 
 export default function AgentsPage(props) {
+  
   const handleRouteCardClick = useCustomHistory("/agent-profile");
 
   const handleAddClick = useCustomHistory("/agent-form");
