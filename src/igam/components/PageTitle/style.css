@@ -1,7 +1,7 @@
 .page-title {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   width: 90%;
   height: 10vh;
   align-self: flex-start;

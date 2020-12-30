@@ -48,9 +48,9 @@
 
 .title-icon {
   width: 20%;
-  height: 50%;
-  color: #17296a;
+  height: 45%;
   margin-left: -5%;
+  color: #17296a;
 }
 
 .packges-info-control {
@@ -328,6 +328,15 @@ sign-up-link {
 .cards-page-add-btn:focus {
   outline: none !important;
 }
+/*/delivery-approval-page/*/
+.delivery-approval-header {
+  font-size: 10px !important;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 3vh;
+  text-align: justify;
+}
 
 .black-form-container {
   width: 100%;
@@ -340,4 +349,52 @@ sign-up-link {
 
 .black-form-container-show {
   left: 0 !important;
+}
+.delivery-approval-details {
+  background-color: hsl(206deg, 11%, 85%);
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-top: 3vh; */
+  margin-bottom: 3vh;
+  border-radius: 25px;
+  padding: 40px;
+  align-items: center;
+  color: #17296a;
+}
+
+.delivery-approval-Code {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.delivery-approval-Code p {
+  margin-left: 15px;
+  text-align: left;
+}
+.delivery-approval-Code input {
+  width: 40%;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-left: 2px solid rgb(8, 8, 8);
+  border-bottom: 2px solid rgb(8, 8, 8);
+  border-right: 2px solid rgb(8, 8, 8);
+  border-top: 2px solid rgb(8, 8, 8);
+}
+.delivery-approval-btn {
+  width: 30%;
+  height: 70%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #c9662d;
+  border: none;
+  font-size: 16px;
+  color: black;
+  height: 4vh;
 }
