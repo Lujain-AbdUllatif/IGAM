@@ -20,6 +20,7 @@ import {
   FaCheckSquare,
   FaFilter,
   FaFileSignature,
+  FaEye,
 } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
 import {
@@ -263,6 +264,14 @@ export function EditIcon(props) {
   return (
     <IconContext.Provider value={{ className: props.className }}>
       <FaEdit />
+    </IconContext.Provider>
+  );
+}
+
+export function EyeIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaEye />
     </IconContext.Provider>
   );
 }
