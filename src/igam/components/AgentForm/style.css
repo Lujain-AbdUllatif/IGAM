@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: auto;
   background: hsl(206deg, 11%, 85%);
   border-radius: 5px;
@@ -67,11 +68,13 @@
 .close-form-btn {
   align-self: flex-end;
   margin-top: 2vh;
-  margin-right: -10vw;
+  margin-right: 2vh;
   background: transparent;
   border: none;
 }
-
+.close-form-btn:focus {
+  outline: none;
+}
 .agent-form-colse-icon {
   color: #17296a;
   width: 20px;

@@ -1,6 +1,7 @@
 import React from "react";
 
 import "./style.css";
+
 export default function Table(props) {
   return (
     <div className="packges-details">
@@ -16,6 +17,7 @@ export default function Table(props) {
             </h5>
           );
         })}
+        <h6>&nbsp;&nbsp;&nbsp;</h6>
       </div>
       {props.children}
     </div>

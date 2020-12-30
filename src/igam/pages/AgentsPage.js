@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useRef } from "react";
 import SearchLocal from "../components/SearchLocal";
 import { UserIcon, AgentsIcon } from "../icons";
 import { AddBtn } from "../components/customBtn";
 import RouteCard from "../components/RouteCard";
 import { useCustomHistory } from "../custom-hooks";
+import AgentForm from "../components/AgentForm";
+import {handleFormDisplay} from '../utils'
 
 const Agents = [
   "Agent_1",
@@ -17,13 +19,17 @@ const Agents = [
 ];
 
 export default function AgentsPage(props) {
-  
+  const formRef = useRef();
   const handleRouteCardClick = useCustomHistory("/agent-profile");
 
-  const handleAddClick = useCustomHistory("/agent-form");
+  // const handleAddClick = useCustomHistory("/agent-form");
+
+  const handleAddClick = handleFormDisplay(formRef,'black-form-container-show')
+
 
   return (
     <div className="main-container">
+      <AgentForm formRef={formRef} />
       <div className="cards-page-head">
         <div className="title">
           <h2>

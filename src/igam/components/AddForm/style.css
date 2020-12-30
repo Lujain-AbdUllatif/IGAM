@@ -19,10 +19,10 @@
 }
 
 .add-form-input {
-  height: 80%;
+  height: 70%;
   border: none;
-  margin-left: 0.7vh;
-  margin-right: 0.7vh;
+  margin-left: 1vh;
+  margin-right: 1vh;
   padding: 5px;
   border-radius: 3vh;
 }
@@ -39,5 +39,3 @@
 .add-form-input:focus {
   outline: none;
 }
-
-

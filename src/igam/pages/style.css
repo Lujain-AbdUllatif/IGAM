@@ -62,7 +62,6 @@
   /* height: 20vh; */
 }
 
-
 .assign-packge-btn {
   width: 100%;
   height: 100%;
@@ -330,4 +329,15 @@ sign-up-link {
   outline: none !important;
 }
 
+.black-form-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: -13vh;
+  left: -300%;
+}
 
+.black-form-container-show {
+  left: 0 !important;
+}
