@@ -22,6 +22,7 @@
   justify-content: start;
   align-items: center;
   margin-top: 3vh;
+  position: relative;
 }
 
 @media all and (max-width: 414px) {
@@ -47,7 +48,8 @@
 
 .title-icon {
   width: 20%;
-  height: 100%;
+  height: 45%;
+  margin-left: -5%;
   color: #17296a;
 }
 
@@ -127,6 +129,7 @@
 
 .packges-data {
   width: 90%;
+  margin: auto;
 }
 
 .packges-head {
@@ -203,22 +206,213 @@
   margin: 2vh auto;
 }
 
-x .packge-detail-title {
-  width: 20%;
-  height: 70%;
+/* ASSIGN-PACKAGE-FORM */
+.assign-package-form {
+  width: 90%;
+  position: relative;
+  margin: 20px;
+  padding: 25px;
+  border-radius: 5px;
+  border: grey solid 1px;
+  background-color: hsl(206deg, 11%, 85%);
+  color: #17296a;
+}
+
+.assign-package-form label {
+  font-size: 12px;
+}
+
+.assign-package-form input,
+.assign-package-form select {
+  width: 90%;
+  height: 5vh;
+  border: none;
+  background: white;
+  border-radius: 5px;
+}
+
+.assign-package-form input,
+.village-select {
+  margin-bottom: 3vh;
+}
+
+.assign-package-form-btn {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c92d5f;
+  height: 4vh;
+  /* color: aliceblue; */
+  padding: 2px 15px;
+  border: none;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.selectBox {
+  width: 90%;
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 90%;
+  height: 150px;
+  padding: 10px;
+  overflow-y: scroll;
+  border: 1px grey solid;
+  background-color: white;
+}
+
+#checkboxes label {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  overflow: hidden;
+  font-size: 10px;
+  margin-bottom: 8px;
+  height: 10%;
 }
-.packge-card {
+
+#checkboxes label input {
+  width: 10%;
+  height: 100%;
+  margin: 7px;
+}
+.logo-big-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.login-form {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #17296a;
+}
+
+.login-btn {
+  width: 7vh;
+  height: 7vh;
+  background: transparent;
+  border: none;
+}
+
+.login-btn:focus {
+  outline-style: none;
+}
+
+.login-page {
   width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #53b7e1;
+}
+
+.login-icon {
+  width: 100%;
+  height: 100%;
+}
+
+sign-up-link {
+  justify-self: flex-end;
+}
+
+.cards-page-head {
+  width: 90%;
+  margin: auto;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-page-add-btn {
+  background: transparent;
+  width: 6vh;
+  height: 6vh;
+  border: none;
+}
+
+.cards-page-add-btn:focus {
+  outline: none !important;
+}
+/*/delivery-approval-page/*/
+.delivery-approval-header {
+  font-size: 10px !important;
+  margin: auto;
   display: flex;
   justify-content: space-around;
+  margin-bottom: 3vh;
+  text-align: justify;
+}
+
+.delivery-approval-details {
+  background-color: hsl(206deg, 11%, 85%);
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-top: 3vh; */
+  margin-bottom: 3vh;
+  border-radius: 25px;
+  padding: 40px;
   align-items: center;
-  background: #c4c4c4;
-  height: 7vh;
-  border-radius: 5px;
   color: #17296a;
-  margin-bottom: 0.5vh;
+}
+
+.delivery-approval-Code {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin-bottom: 3vh;
+  margin-top: 3vh;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.delivery-approval-Code p {
+  margin-left: 15px;
+  text-align: left;
+}
+.delivery-approval-Code input {
+  width: 40%;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-left: 2px solid rgb(8, 8, 8);
+  border-bottom: 2px solid rgb(8, 8, 8);
+  border-right: 2px solid rgb(8, 8, 8);
+  border-top: 2px solid rgb(8, 8, 8);
+}
+.delivery-approval-btn {
+  width: 30%;
+  height: 70%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #c9662d;
+  border: none;
+  font-size: 16px;
+  color: black;
+  height: 4vh;
 }

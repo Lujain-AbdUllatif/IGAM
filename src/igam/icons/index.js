@@ -19,6 +19,7 @@ import {
   FaEdit,
   FaCheckSquare,
   FaFilter,
+  FaFileSignature,
 } from "react-icons/fa";
 import { AiOutlineStock } from "react-icons/ai";
 import {
@@ -31,6 +32,14 @@ import {
 import { GiFamilyHouse, GiVillage } from "react-icons/gi";
 import { ImMenu } from "react-icons/im";
 import { BsPlusCircleFill, BsFillQuestionCircleFill } from "react-icons/bs";
+
+export function SignatureIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <FaFileSignature />
+    </IconContext.Provider>
+  );
+}
 
 export function FilterIcon(props) {
   return (

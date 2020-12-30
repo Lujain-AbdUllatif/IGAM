@@ -5,15 +5,10 @@ export default function FamiliesForm(props) {
   return (
     <div className="families-form-container">
       <form className="families-form">
-        <h2>Family-Form</h2>
+        <h4>Family-Form</h4>
         <label htmlFor="Name"> Name</label>
         <div className="families-location-icon">
-          <input
-            type="text"
-            name="Name"
-            placeholder="Name ....."
-            className="families-input-location"
-          />
+          <input type="text" name="Name" className="families-input-location" />
         </div>
         <br></br>
 
@@ -22,7 +17,6 @@ export default function FamiliesForm(props) {
           <input
             type="tel"
             name="phone no"
-            placeholder="phone no ....."
             pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
             className="families-input-location"
           />
@@ -34,7 +28,6 @@ export default function FamiliesForm(props) {
           <input
             type="email"
             name="email"
-            placeholder="email ....."
             className="families-input-location"
           />
         </div>
@@ -46,7 +39,6 @@ export default function FamiliesForm(props) {
             type="text"
             name="location"
             className="families-input-location"
-            placeholder="location ....."
           />
           <LocationsIcon />
         </div>
@@ -57,7 +49,6 @@ export default function FamiliesForm(props) {
           <input
             type="Number"
             name="Member"
-            placeholder="member ....."
             className="families-input-location"
           />
         </div>
