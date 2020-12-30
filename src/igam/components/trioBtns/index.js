@@ -1,26 +1,23 @@
 import React from "react";
 import "./style.css";
 import { DeliveredIcon, AssignedIcon, AssignIcon } from "../../icons";
-import { useHistory } from "react-router-dom";
+import { useCustomHistory } from "../../custom-hooks/index";
+import { CircleBtn } from "../CircleBtn";
 
 export default function TrioBtns(props) {
-  const history = useHistory();
-
-  const handleFormClick = (e) => {
-    history.push("/package-form");
-  };
+  const handleFormClick = useCustomHistory("package-form");
 
   return (
     <div className="trioBtns-container">
-      <button>
+      <CircleBtn>
         <DeliveredIcon className="trioBtns-deliveredIcon" />
-      </button>
-      <button>
+      </CircleBtn>
+      <CircleBtn>
         <AssignedIcon className="trioBtns-assignedIcon" />
-      </button>
-      <button onClick={handleFormClick}>
+      </CircleBtn>
+      <CircleBtn onClick={handleFormClick}>
         <AssignIcon className="trioBtns-assignIcon" />
-      </button>
+      </CircleBtn>
     </div>
   );
 }
