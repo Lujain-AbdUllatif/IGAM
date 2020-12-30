@@ -17,11 +17,8 @@ import FamiliesFormPage from "../pages/FamiliesFormPage";
 import LocationsFormPage from "../pages/LocationsFormPage";
 import AssignPackageForm from "../pages/AssignPackageForm";
 import AgentFormPage from "./AgentFormPage";
-<<<<<<< HEAD
 import DeliveryApprovalPage from "./DeliveryApprovalPage";
-=======
 import MoneyPage from "./MoneyPage";
->>>>>>> main
 
 export default function MainPage() {
   return (
