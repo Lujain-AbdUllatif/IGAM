@@ -4,6 +4,7 @@ import { HouseIcon, FamilyIcon } from "../icons";
 import { AddBtn } from "../components/customBtn";
 import RouteCard from "../components/RouteCard";
 import { useCustomHistory } from "../custom-hooks";
+
 const Families = [
   "Family_1",
   "Family_2",
@@ -15,7 +16,9 @@ const Families = [
 ];
 
 export default function FamiliesPage(props) {
+  const handleRouteCardClick = useCustomHistory("/family-profile");
   const handleAddClick = useCustomHistory("/family-form");
+
   return (
     <div className="main-container">
       <div className="cards-page-head">
@@ -32,7 +35,11 @@ export default function FamiliesPage(props) {
       <div className="cards-container">
         {Families.map((family) => {
           return (
-            <RouteCard title={family} className="white">
+            <RouteCard
+              title={family}
+              className="white"
+              onClick={handleRouteCardClick}
+            >
               <HouseIcon className="card-icon qarmede" />
             </RouteCard>
           );

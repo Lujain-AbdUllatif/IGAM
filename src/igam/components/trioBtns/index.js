@@ -7,7 +7,6 @@ export default function TrioBtns(props) {
   const history = useHistory();
 
   const handleFormClick = (e) => {
-    e.preventDefault();
     history.push("/package-form");
   };
 

@@ -1,10 +1,10 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import SearchLocal from "../components/SearchLocal";
 import { UserIcon, AgentsIcon } from "../icons";
 import { AddBtn } from "../components/customBtn";
 import RouteCard from "../components/RouteCard";
 import { useCustomHistory } from "../custom-hooks";
+
 const Agents = [
   "Agent_1",
   "Agent_2",
@@ -17,6 +17,8 @@ const Agents = [
 ];
 
 export default function AgentsPage(props) {
+  const handleRouteCardClick = useCustomHistory("/agent-profile");
+
   const handleAddClick = useCustomHistory("/agent-form");
 
   return (
@@ -34,7 +36,11 @@ export default function AgentsPage(props) {
       <div className="cards-container">
         {Agents.map((agent) => {
           return (
-            <RouteCard title={agent} className="yellow">
+            <RouteCard
+              title={agent}
+              className="yellow"
+              onClick={handleRouteCardClick}
+            >
               <UserIcon className="card-icon  yellow" />
             </RouteCard>
           );
