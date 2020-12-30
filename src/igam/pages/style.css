@@ -347,10 +347,17 @@ sign-up-link {
   align-items: center;
 }
 
+.cards-page-head h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .cards-page-add-btn {
   background: transparent;
   width: 6vh;
   height: 6vh;
+  margin-left: 10px;
   border: none;
 }
 
