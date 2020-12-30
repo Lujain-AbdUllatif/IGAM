@@ -6,6 +6,7 @@ export default function TableDataRow(props) {
       {props.row_data.map((cellData) => {
         return (
           <h6
+            key={cellData}
             className={
               props.className ? props.className : "packge-detail-title"
             }
