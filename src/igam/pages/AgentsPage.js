@@ -5,6 +5,7 @@ import { UserIcon, AgentsIcon } from "../icons";
 import { AddBtn } from "../components/customBtn";
 import RouteCard from "../components/RouteCard";
 import { useCustomHistory } from "../custom-hooks";
+
 const Agents = [
   "Agent_1",
   "Agent_2",
@@ -17,6 +18,12 @@ const Agents = [
 ];
 
 export default function AgentsPage(props) {
+  const history = useHistory();
+
+  const handleClick = () => {
+    history.push("/agent-profile");
+  };
+
   const handleAddClick = useCustomHistory("/agent-form");
 
   return (
@@ -34,7 +41,7 @@ export default function AgentsPage(props) {
       <div className="cards-container">
         {Agents.map((agent) => {
           return (
-            <RouteCard title={agent} className="yellow">
+            <RouteCard title={agent} className="yellow" onClick={handleClick}>
               <UserIcon className="card-icon  yellow" />
             </RouteCard>
           );

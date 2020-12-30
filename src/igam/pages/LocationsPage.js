@@ -4,6 +4,8 @@ import { VillageIcon, LocationsIcon } from "../icons";
 import { AddBtn } from "../components/customBtn";
 import RouteCard from "../components/RouteCard";
 import { useCustomHistory } from "../custom-hooks";
+import { useHistory } from "react-router-dom";
+
 const villages = [
   "Village_1",
   "Village_2",
@@ -15,6 +17,12 @@ const villages = [
 ];
 
 export default function LocationPage(props) {
+  const history = useHistory();
+
+  const handleClick = () => {
+    history.push("/families");
+  };
+
   const handleAddClick = useCustomHistory("location-form");
   return (
     <div className="main-container">
@@ -33,7 +41,7 @@ export default function LocationPage(props) {
       <div className="cards-container">
         {villages.map((village) => {
           return (
-            <RouteCard title={village} className="white">
+            <RouteCard title={village} className="white" onClick={handleClick}>
               <VillageIcon className="card-icon orange" />
             </RouteCard>
           );
