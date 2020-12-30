@@ -62,43 +62,7 @@
   /* height: 20vh; */
 }
 
-.packges-control {
-  display: flex;
-  height: 6vh;
-  margin-top: 2vh;
-  width: 70%;
-  justify-content: space-around;
-  align-items: center;
-}
 
-.add-packges-form {
-  height: 100%;
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #afafaf;
-  border-radius: 10px;
-}
-
-.add-packeges-input {
-  width: 62%;
-  height: 90%;
-  border: none;
-  margin-left: 5px;
-}
-.add-packges-btn {
-  width: 30%;
-  height: 90%;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.add-packges-btn:focus,
-.add-packeges-input:focus {
-  outline: none;
-}
 .assign-packge-btn {
   width: 100%;
   height: 100%;

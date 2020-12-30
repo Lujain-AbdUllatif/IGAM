@@ -1,5 +1,5 @@
 import React from "react";
-import { PackgeIcon, AssignIcon, DeliveredIcon, AssignedIcon } from "../icons";
+import { PackgeIcon, MoneyIcon } from "../icons";
 import PageTitle from "../components/PageTitle";
 import SubTitleInfo from "../components/SubTitleInfo";
 import TrioBtns from "../components/trioBtns";
@@ -8,15 +8,16 @@ import SearchLocal from "../components/SearchLocal";
 import Table from "../components/Table";
 import TableDataRow from "../components/TableDataRow";
 import AddForm from "../components/AddForm";
-export default function PackgesPage() {
+export default function MoneyPage() {
   return (
     <div className="main-container">
-      <PageTitle title="Packges">
-        <PackgeIcon className="title-icon" text="Avialable Packges" />
+      <PageTitle title="Money">
+        <MoneyIcon className="title-icon" />
       </PageTitle>
       <div className="packges-info-control">
-        <SubTitleInfo className="blue-igam" text="Avialable Packages" />
-        <AddForm placeholder="packages..." />
+        <SubTitleInfo className="blue-igam" text="Donation Budget" />
+
+        <AddForm placeholder="money..." />
       </div>
 
       <TrioBtns />
