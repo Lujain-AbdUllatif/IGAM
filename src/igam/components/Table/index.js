@@ -1,5 +1,5 @@
 import React from "react";
-import TableDataRow from "../TableDataRow";
+
 import "./style.css";
 export default function Table(props) {
   return (
