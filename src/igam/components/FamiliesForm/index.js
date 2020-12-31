@@ -24,7 +24,7 @@ export default function FamiliesForm(props) {
           </div>
           <br></br>
 
-          <label for="phone no">phone no </label>
+          <label htmlFor="phone no">phone no </label>
           <div className="families-location-icon">
             <input
               type="tel"
@@ -35,7 +35,7 @@ export default function FamiliesForm(props) {
           </div>
           <br></br>
 
-          <label for="email"> email </label>
+          <label htmlFor="email"> email </label>
           <div className="families-location-icon">
             <input
               type="email"
@@ -45,7 +45,7 @@ export default function FamiliesForm(props) {
           </div>
           <br></br>
 
-          <label For="location"> location</label>
+          <label htmlFor="location"> location</label>
           <div className="families-location-icon">
             <input
               type="text"
@@ -56,7 +56,7 @@ export default function FamiliesForm(props) {
           </div>
           <br></br>
 
-          <label for="Member">Member </label>
+          <label htmlFor="Member">Member </label>
           <div className="families-location-icon">
             <input
               type="Number"

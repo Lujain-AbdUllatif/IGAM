@@ -5,17 +5,20 @@ import TrioBtns from "../components/trioBtns";
 import SearchLocal from "../components/SearchLocal";
 import Table from "../components/Table";
 import TableDataRow from "../components/TableDataRow";
-
+import AssignPackgeForm from "../components/AssignPackageForm";
+import { useFormRef } from "../custom-hooks";
 export default function FamilyProfile(props) {
+  const [formRef, handleFormDisplay] = useFormRef();
   return (
     <div>
+      <AssignPackgeForm formRef={formRef} onClose={handleFormDisplay} />
       <Profile
         type="family"
         name="Hasan Hasanien"
         phone="+972 98 765 4321"
         location="VillageY"
       />
-      <TrioBtns />
+      <TrioBtns onClick_3={handleFormDisplay} />
       <div className="packges-data">
         <div className="packges-head">
           <h3 className="blue-igam">Delivered</h3>

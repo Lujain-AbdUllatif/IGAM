@@ -5,17 +5,21 @@ import TrioBtns from "../components/trioBtns";
 import SearchLocal from "../components/SearchLocal";
 import Table from "../components/Table";
 import TableDataRow from "../components/TableDataRow";
+import AssignPackgeForm from "../components/AssignPackageForm";
+import { useFormRef } from "../custom-hooks";
 
 export default function AgentProfile(props) {
+  const [formRef, handleFormDisplay] = useFormRef();
   return (
     <div>
+      <AssignPackgeForm formRef={formRef} onClose={handleFormDisplay} />
       <Profile
         type="agent"
         name="Radi Fahmi"
         phone="+972 12 345 6789"
         location="VillageX"
       />
-      <TrioBtns />
+      <TrioBtns onClick_3={handleFormDisplay} />
       <div className="packges-data">
         <div className="packges-head">
           <h3 className="blue-igam">Delivered</h3>
