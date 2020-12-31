@@ -1,16 +1,20 @@
-import React from "react";
-import { PackgeIcon, AssignIcon, DeliveredIcon, AssignedIcon } from "../icons";
+import React, { useRef } from "react";
+import { PackgeIcon } from "../icons";
 import PageTitle from "../components/PageTitle";
 import SubTitleInfo from "../components/SubTitleInfo";
 import TrioBtns from "../components/trioBtns";
-import { AddBtn } from "../components/customBtn";
+import { handleFormDisplay } from "../utils";
 import SearchLocal from "../components/SearchLocal";
 import Table from "../components/Table";
 import TableDataRow from "../components/TableDataRow";
 import AddForm from "../components/AddForm";
+import AssignPackageForm from "../components/AssignPackageForm";
+import { useFormRef } from "../custom-hooks";
 export default function PackgesPage() {
+  const [formRef, handleFormDisplay] = useFormRef();
   return (
     <div className="main-container">
+      <AssignPackageForm formRef={formRef} onClose={handleFormDisplay} />
       <PageTitle title="Packges">
         <PackgeIcon className="title-icon" text="Avialable Packges" />
       </PageTitle>
@@ -19,7 +23,7 @@ export default function PackgesPage() {
         <AddForm placeholder="packages..." />
       </div>
 
-      <TrioBtns />
+      <TrioBtns onClick_3={handleFormDisplay} />
 
       <div className="packges-data">
         <div className="packges-head">
