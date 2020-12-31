@@ -1,9 +1,16 @@
 /* Assign Icon */
 .edit-icon {
   align-self: flex-end;
+  color: #17296a;
+}
+
+.edit-agent-btn {
+  background: transparent;
+  align-self: flex-end;
   font-size: 35px;
   margin-right: 25px;
   margin-top: 20px;
+  border: none;
 }
 
 /* Profile Container */

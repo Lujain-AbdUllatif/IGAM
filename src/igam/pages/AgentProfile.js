@@ -7,17 +7,21 @@ import Table from "../components/Table";
 import TableDataRow from "../components/TableDataRow";
 import AssignPackgeForm from "../components/AssignPackageForm";
 import { useFormRef } from "../custom-hooks";
+import AgentForm from "../components/AgentForm";
 
 export default function AgentProfile(props) {
-  const [formRef, handleFormDisplay] = useFormRef();
+  const [packageFormRef, handleFormDisplay] = useFormRef();
+  const [editAgentFormRef, handleEditFormDisplay] = useFormRef();
   return (
     <div>
-      <AssignPackgeForm formRef={formRef} onClose={handleFormDisplay} />
+      <AgentForm formRef={editAgentFormRef} onClose={handleEditFormDisplay} />
+      <AssignPackgeForm formRef={packageFormRef} onClose={handleFormDisplay} />
       <Profile
         type="agent"
         name="Radi Fahmi"
         phone="+972 12 345 6789"
         location="VillageX"
+        onEdit={handleEditFormDisplay}
       />
       <TrioBtns onClick_3={handleFormDisplay} />
       <div className="packges-data">

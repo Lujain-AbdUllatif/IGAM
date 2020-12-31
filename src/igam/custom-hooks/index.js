@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import { useHistory } from "react-router-dom";
+
 export function useCustomHistory(path) {
   const history = useHistory();
   const handlePathChange = (event) => {

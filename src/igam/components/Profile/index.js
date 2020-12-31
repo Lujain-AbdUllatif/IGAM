@@ -11,7 +11,10 @@ import {
 export default function Profile(props) {
   return (
     <div class="profile-container">
-      <EditIcon className="edit-icon" />
+      <button className="edit-agent-btn" onClick={props.onEdit}>
+        <EditIcon className="edit-icon" />
+      </button>
+
       {/* Header */}
       <div className="profile-header">
         <span class="circle">
