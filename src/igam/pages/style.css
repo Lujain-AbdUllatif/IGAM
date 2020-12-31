@@ -387,9 +387,11 @@ sign-up-link {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  color: #17296a;
 }
 /*/delivery-approval-page/*/
 .family-code {
   display: flex;
   justify-content: space-between;
+  color: #17296a;
 }
