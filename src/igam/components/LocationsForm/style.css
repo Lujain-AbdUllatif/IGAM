@@ -6,6 +6,9 @@
   border-radius: 5px;
   align-items: center;
   color: #17296a;
+  margin: auto;
+  margin-top: 30vh;
+  position: relative;
 }
 .locaions-form-container h4 {
   margin-bottom: 3vh;

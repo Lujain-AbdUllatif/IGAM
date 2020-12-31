@@ -6,7 +6,7 @@
 }
 
 /* SPANS */
-.trioBtns-container button {
+/* .trioBtns-container button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,18 +17,18 @@
   height: 70px;
   cursor: pointer;
   border: none;
-}
+} */
 
-.trioBtns-container button:hover {
+/* .trioBtns-container button:hover {
   background-color: hsl(209deg, 38%, 26%);
-}
+} */
 
 /* ICONS */
-.trioBtns-deliveredIcon,
+/* .trioBtns-deliveredIcon,
 .trioBtns-assignedIcon,
 .trioBtns-assignIcon {
   font-size: 38px;
-}
+} */
 
 .trioBtns-deliveredIcon {
   color: #257d18;

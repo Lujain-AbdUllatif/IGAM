@@ -1,5 +1,6 @@
 import React from "react";
-
+import { CloseIcon } from "../../icons";
+import "./style.css";
 export default function AssignPackageForm(props) {
   const [clicked, setClicked] = React.useState(false);
   const handleSelectBox = () => {
@@ -8,8 +9,15 @@ export default function AssignPackageForm(props) {
   };
 
   return (
-    <div>
+    <div ref={props.formRef} className="black-form-container">
       <form className="assign-package-form">
+        <button
+          type="button"
+          className="close-form-btn assign-package-close-btn"
+          onClick={props.onClose}
+        >
+          <CloseIcon className="agent-form-colse-icon" />
+        </button>
         <h4>Assiging Package</h4>
         <br />
         <label>Package</label>
