@@ -1,6 +1,5 @@
 import React from "react";
 import { SignatureIcon } from "../icons";
-
 import PageTitle from "../components/PageTitle";
 export default function DeliveryApproval() {
   return (
