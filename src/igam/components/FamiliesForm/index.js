@@ -6,7 +6,6 @@ export default function FamiliesForm(props) {
     <div ref={props.formRef} className="black-form-container">
       <div className="families-form-container">
         <button
-          type="button"
           className="close-form-btn assign-package-close-btn"
           onClick={props.onClose}
         >
