@@ -5,7 +5,7 @@
 <p align = "center">
   <img src=  />
 </p>
-  <h2 align="center"><a href=''><strong>Check our website »</strong></a>
+  <h2 align="center"><a href=''><strong>Check »</strong></a>
 
 <!-- TABLE OF CONTENTS -->
 
