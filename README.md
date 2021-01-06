@@ -3,7 +3,7 @@
 <br />
 
 <p align = "center">
-  <img src=  />
+  <img src= 'image1.png'  width="600" height="295" />
 </p>
   <h2 align="center"><a href=''><strong>Check »</strong></a>
 
