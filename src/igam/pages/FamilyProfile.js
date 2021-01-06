@@ -7,16 +7,24 @@ import Table from "../components/Table";
 import TableDataRow from "../components/TableDataRow";
 import AssignPackgeForm from "../components/AssignPackageForm";
 import { useFormRef } from "../custom-hooks";
+import FamiliesForm from "../components/FamiliesForm";
 export default function FamilyProfile(props) {
-  const [formRef, handleFormDisplay] = useFormRef();
+  const [packageFormRef, handleFormDisplay] = useFormRef();
+  const [editFamilyFormRef, handleEditFormDisplay] = useFormRef();
+
   return (
     <div>
-      <AssignPackgeForm formRef={formRef} onClose={handleFormDisplay} />
+      <FamiliesForm
+        formRef={editFamilyFormRef}
+        onClose={handleEditFormDisplay}
+      />
+      <AssignPackgeForm formRef={packageFormRef} onClose={handleFormDisplay} />
       <Profile
         type="family"
         name="Hasan Hasanien"
         phone="+972 98 765 4321"
         location="VillageY"
+        onEdit={handleEditFormDisplay}
       />
       <TrioBtns onClick_3={handleFormDisplay} />
       <div className="packges-data">
