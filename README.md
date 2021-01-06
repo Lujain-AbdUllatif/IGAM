@@ -38,7 +38,14 @@ Examples about the problems in this villages:
  
 <!-- GETTING STARTED -->
 
-## Getting Started
+## Getting Started:
+In the homepage you can choose an agent or an administrator.
+In the agent field there are agent profile and which location he is for and add new agent.
+In the location field there are location's profile and also add new family.
+In the families field there are family's profile and there location.Also add new village's location..
+In the stock field there are delivered and assigned packages:
+- In the delivered the agent can know how many packages was delivered from the stock, and how many remain.
+- In the assigned the agent can know how many packages are assigned and know if there are sufficient amount in the stock.
 
 
 
