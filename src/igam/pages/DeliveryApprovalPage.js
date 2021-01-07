@@ -1,9 +1,19 @@
 import React from "react";
 import { SignatureIcon } from "../icons";
 import PageTitle from "../components/PageTitle";
+import DeliveryMessage from "../components/DeliveryMessage.js";
+import { useFormRef } from "../custom-hooks";
+import { useCustomHistory } from "../custom-hooks";
 export default function DeliveryApproval() {
+  const [messageRef, handleMessageDisplay] = useFormRef();
+  const gotoAgentHome = useCustomHistory("/");
+  const closeMessage = (event) => {
+    handleMessageDisplay(event);
+    gotoAgentHome();
+  };
   return (
     <div className="main-container">
+      <DeliveryMessage formRef={messageRef} onClose={closeMessage} />
       <div className="delivery-approval-header">
         <PageTitle title="Delivery Approval">
           <SignatureIcon className="title-icon" />
@@ -27,7 +37,11 @@ export default function DeliveryApproval() {
         </div>
       </div>
 
-      <button className="delivery-approval-btn" type="submit">
+      <button
+        className="delivery-approval-btn"
+        type="submit"
+        onClick={handleMessageDisplay}
+      >
         Submit
       </button>
     </div>

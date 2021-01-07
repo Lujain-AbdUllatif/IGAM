@@ -22,7 +22,7 @@ import {
   FaFileSignature,
   FaEye,
 } from "react-icons/fa";
-import { AiOutlineStock } from "react-icons/ai";
+import { AiOutlineStock, AiOutlineFileDone } from "react-icons/ai";
 import {
   MdLocationOn,
   MdAssignment,
@@ -33,6 +33,14 @@ import {
 import { GiFamilyHouse, GiVillage } from "react-icons/gi";
 import { ImMenu } from "react-icons/im";
 import { BsPlusCircleFill, BsFillQuestionCircleFill } from "react-icons/bs";
+
+export function DeliverIcon(props) {
+  return (
+    <IconContext.Provider value={{ className: props.className }}>
+      <AiOutlineFileDone />
+    </IconContext.Provider>
+  );
+}
 
 export function SignatureIcon(props) {
   return (

@@ -1,16 +1,16 @@
 import React from "react";
 import "./style.css";
-import { EyeIcon } from "../../icons";
+import { EyeIcon, DeliverIcon } from "../../icons";
+import { CircleBtn } from "../CircleBtn";
+import { useCustomHistory } from "../../custom-hooks";
 
 export default function TableDataRow(props) {
   const [eyeClick, setEyeClick] = React.useState(false);
-
+  const deliverPackage = useCustomHistory("/delivery-approval");
   const handleEyeClick = () => {
     setEyeClick(!eyeClick);
     console.log(eyeClick);
   };
-
-  // props.row_data.push(<EyeIcon />);
 
   return (
     <div className="details-in-table">
@@ -27,6 +27,14 @@ export default function TableDataRow(props) {
             </h6>
           );
         })}
+        {props.agentDisplay ? (
+          <CircleBtn className="deliver-btn" onClick={deliverPackage}>
+            <DeliverIcon />
+          </CircleBtn>
+        ) : (
+          <></>
+        )}
+
         <h6 onClick={handleEyeClick}>
           <EyeIcon />
         </h6>

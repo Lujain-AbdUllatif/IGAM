@@ -32,7 +32,7 @@ export default function NavBar(props) {
             </li>
             <li className="nav-sub-list-item">
               <Link to="/packges" className="link" onClick={handleCloseNav}>
-                <h3>Packges</h3>
+                <h3>Packages</h3>
               </Link>
             </li>
           </ul>

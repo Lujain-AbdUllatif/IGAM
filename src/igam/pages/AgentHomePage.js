@@ -7,49 +7,46 @@ import Table from "../components/Table";
 import TableDataRow from "../components/TableDataRow";
 import AssignPackgeForm from "../components/AssignPackageForm";
 import { useFormRef } from "../custom-hooks";
-import FamiliesForm from "../components/FamiliesForm";
-export default function FamilyProfile(props) {
-  const [packageFormRef, handleFormDisplay] = useFormRef();
-  const [editFamilyFormRef, handleEditFormDisplay] = useFormRef();
-  const [displayedPackages, setDisplayedPackages] = useState("Delivered");
+import AgentForm from "../components/AgentForm";
 
+export default function AgentHomePage(props) {
+  const [packageFormRef, handleFormDisplay] = useFormRef();
+  const [editAgentFormRef, handleEditFormDisplay] = useFormRef();
+  const [displayedPackages, setDisplayedPackages] = useState("Delivered");
   return (
     <div>
-      <FamiliesForm
-        formRef={editFamilyFormRef}
-        onClose={handleEditFormDisplay}
-      />
+      <AgentForm formRef={editAgentFormRef} onClose={handleEditFormDisplay} />
       <AssignPackgeForm formRef={packageFormRef} onClose={handleFormDisplay} />
       <Profile
-        type="family"
-        name="Hasan Hasanien"
-        phone="+972 98 765 4321"
-        location="VillageY"
+        type="agent"
+        name="Radi Fahmi"
+        phone="+972 12 345 6789"
+        location="VillageX"
         onEdit={handleEditFormDisplay}
       />
       <TrioBtns
         onClick_3={handleFormDisplay}
         onClick_1={(e) => setDisplayedPackages("Delivered")}
         onClick_2={(e) => setDisplayedPackages("Assigned")}
-        btn_3_display={true}
+        btn_3_display={false}
       />
       <div className="packges-data">
         <div className="packges-head">
           <h3 className="blue-igam">{displayedPackages}</h3>
           <SearchLocal className="search-packges-local-container" />
         </div>
-        <Table table_titles={["Date", "Agent", "Package"]}>
+        <Table table_titles={["Date", "Location", "Family", "Package"]}>
           <TableDataRow
-            row_data={["dd/mm/yy", "agent_1", "package_1"]}
-            agentDisplay={false}
+            row_data={["dd/mm/yy", "location_1", "family_1", "package_1"]}
+            agentDisplay={true && displayedPackages === "Assigned"}
           />
           <TableDataRow
-            row_data={["dd/mm/yy", "agent_2", "package_2"]}
-            agentDisplay={false}
+            row_data={["dd/mm/yy", "location_2", "family_2", "package_2"]}
+            agentDisplay={true && displayedPackages === "Assigned"}
           />
           <TableDataRow
-            row_data={["dd/mm/yy", "agent_3", "package_3"]}
-            agentDisplay={false}
+            row_data={["dd/mm/yy", "location_3", "family_3", "package_3"]}
+            agentDisplay={true && displayedPackages === "Assigned"}
           />
         </Table>
       </div>

@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginPage from "../pages/LoginPage";
-import MainPage from "../pages/MainPage";
+import AdminRoutePage from "../pages/AdminRoutePage";
+import AgentRoutePage from "../pages/AgentRoutePage";
 
 export default function App() {
+  const [routePage, setRoutePage] = useState("login");
   return (
-    <div>
-      <MainPage />
+    <div className="page">
+      {routePage === "login" ? (
+        <LoginPage handleSignIn={setRoutePage} />
+      ) : routePage === "admin" ? (
+        <AdminRoutePage />
+      ) : (
+        <AgentRoutePage />
+      )}
     </div>
   );
 }

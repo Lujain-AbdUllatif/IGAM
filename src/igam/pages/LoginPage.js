@@ -5,8 +5,12 @@ import LogInInput from "../components/LoginInput";
 import { UserIcon, KeyIcon, SignInIcon } from "../icons";
 import { useForm } from "../custom-hooks/useForm";
 
-export default function LoginPage() {
+export default function LoginPage(props) {
   const [values, handleChange] = useForm({ username: "", password: "" });
+  const handleSignIn = (event) => {
+    event.preventDefault();
+    props.handleSignIn(values.username);
+  };
   return (
     <div className="page">
       <div className="login-page">
@@ -14,7 +18,7 @@ export default function LoginPage() {
           className="logo-title-big"
           container_className="logo-big-container"
         />
-        <form className="login-form">
+        <form className="login-form" onSubmit={handleSignIn}>
           <LogInInput
             type="text"
             title="username"
@@ -35,9 +39,9 @@ export default function LoginPage() {
             <SignInIcon className="login-icon blue-igam" />
           </button>
         </form>
-        <Link to="/sign-up" className="sign-up-link">
+        <a to="/sign-up" className="sign-up-link">
           Sign-Up
-        </Link>
+        </a>
       </div>
     </div>
   );

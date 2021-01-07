@@ -3,7 +3,7 @@ import "./style.css";
 import Logo from "../Logo";
 import { HamburgerIcon } from "../../icons";
 import Navbar from "../../components/Navbar";
-export default function HeadSection() {
+export default function HeadSection(props) {
   const ref = useRef();
   const handleDisplayNav = (event) => {
     console.log(ref.current);
@@ -13,11 +13,15 @@ export default function HeadSection() {
     <div className="head-container">
       <div className="head-section">
         <Logo />
-        <button className="nav-btn" onClick={handleDisplayNav}>
-          <HamburgerIcon className="ham-icon" />
-        </button>
+        {props.adminRoute ? (
+          <button className="nav-btn" onClick={handleDisplayNav}>
+            <HamburgerIcon className="ham-icon" />
+          </button>
+        ) : (
+          <></>
+        )}
       </div>
-      <Navbar navRef={ref} />
+      {props.adminRoute ? <Navbar navRef={ref} /> : <></>}
     </div>
   );
 }
