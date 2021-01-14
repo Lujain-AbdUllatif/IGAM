@@ -1,4 +1,3 @@
-import React from "react";
 import "./style.css";
 export default function LogInInput(props) {
   return (
@@ -11,7 +10,6 @@ export default function LogInInput(props) {
         placeholder={props.title}
         value={props.value}
         onChange={props.onChange}
-        className="login-input"
       />
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { SearchIcon, UserIcon } from "../../icons";
+import { SearchIcon } from "../../icons";
 function SearchLocal(props) {
   return (
     <form

@@ -9,15 +9,19 @@ export default function TrioBtns(props) {
 
   return (
     <div className="trioBtns-container">
-      <CircleBtn>
+      <CircleBtn onClick={props.onClick_1}>
         <DeliveredIcon className="trioBtns-deliveredIcon" />
       </CircleBtn>
-      <CircleBtn>
+      <CircleBtn onClick={props.onClick_2}>
         <AssignedIcon className="trioBtns-assignedIcon" />
       </CircleBtn>
-      <CircleBtn onClick={props.onClick_3}>
-        <AssignIcon className="trioBtns-assignIcon" />
-      </CircleBtn>
+      {props.btn_3_display ? (
+        <CircleBtn onClick={props.onClick_3}>
+          <AssignIcon className="trioBtns-assignIcon" />
+        </CircleBtn>
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 }
