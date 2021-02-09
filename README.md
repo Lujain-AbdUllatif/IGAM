@@ -1,12 +1,6 @@
 # IGAM
 
 <br />
-
-<p align = "center">
-  <img src= 'image1.png'  width="295" height="295" />
-</p>
-  <h2 align="center"><a href=''><strong>Check »</strong></a>
-
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
