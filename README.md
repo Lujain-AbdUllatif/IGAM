@@ -4,9 +4,8 @@ The web-application provides the necessary connection between the administrators
 *Note that the project is not deployed and the work on the project has stopped.*
  
 ## Built by 
-- React.js.
-- Node.js.
-- express.js. 
+- React.js
+- Node.js
 
 ## Team
 - [Ammar Yousef](https://github.com/Ammaryus)  
