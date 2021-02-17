@@ -9,9 +9,9 @@ The web-application provides the necessary connection between the administrators
 - express.js. 
 
 ## Team
-[Ammar Yousef](https://github.com/Ammaryus)  
-[Lujain Abdllatif](https://github.com/Lujain-AbdUllatif)  
-[Shoog Kaabiya](https://github.com/shoogkabiya)  
-[Myassar Jabalee](https://github.com/myassar1211)
+- [Ammar Yousef](https://github.com/Ammaryus)  
+- [Lujain Abdllatif](https://github.com/Lujain-AbdUllatif)  
+- [Shoog Kaabiya](https://github.com/shoogkabiya)  
+- [Myassar Jabalee](https://github.com/myassar1211)
 
 
