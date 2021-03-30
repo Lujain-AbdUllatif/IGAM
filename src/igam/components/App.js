@@ -8,13 +8,14 @@ export default function App() {
   const [routePage, setRoutePage] = useState("login");
   return (
     <div className="page">
-      {routePage === "login" ? (
+      {/* {routePage === "login" ? (
         <LoginPage handleSignIn={setRoutePage} />
       ) : routePage === "admin" ? (
         <AdminRoutePage />
       ) : (
         <AgentRoutePage />
-      )}
+      )} */}
+      <AdminRoutePage />
     </div>
   );
 }
